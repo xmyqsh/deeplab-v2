@@ -1,4 +1,4 @@
-## DeepLab
+## DeepLab v2
 
 ### Introduction
 
@@ -60,7 +60,7 @@ Note that if you use the densecrf implementation, please consult and cite the fo
 
 *DeepLabv2* currently achieves **79.7%** on the challenging PASCAL VOC 2012 semantic image segmentation task -- see the [leaderboard](http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=6). 
 
-Please refer to our poject [website](http://liangchiehchen.com/projects/DeepLab.html) for details.
+Please refer to our project [website](http://liangchiehchen.com/projects/DeepLab.html) for details.
 
 ### Pre-trained models
 
