@@ -1,4 +1,4 @@
-## DeepLab
+## DeepLab v2
 
 ### Introduction
 
@@ -6,40 +6,40 @@ DeepLab is a state-of-art deep learning system for semantic image segmentation b
 
 It combines (1) *atrous convolution* to explicitly control the resolution at which feature responses are computed within Deep Convolutional Neural Networks, (2) *atrous spatial pyramid pooling* to robustly segment objects at multiple scales with filters at multiple sampling rates and effective fields-of-views, and (3) densely connected conditional random fields (CRF) as post processing.
 
-This distribution provides a publicly available implementation for the key model ingredients reported in our latest [arXiv paper](https:///arxiv.org/pdf/1606.00915).
+This distribution provides a publicly available implementation for the key model ingredients reported in our latest [arXiv paper](http://arxiv.org/abs/1606.00915).
 It also contains implementations for **all** methods reported in all our previous papers.
 
 Please consult and consider citing the following papers:
 
-    @article{chen2016deeplab,
+    @article{CP2016Deeplab,
       title={DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs},
       author={Liang-Chieh Chen and George Papandreou and Iasonas Kokkinos and Kevin Murphy and Alan L Yuille},
       journal={arXiv:1606.00915},
       year={2016}
     }
 
-    @inproceedings{chen2016attention,
+    @inproceedings{CY2016Attention,
       title={Attention to Scale: Scale-aware Semantic Image Segmentation},
       author={Liang-Chieh Chen and Yi Yang and Jiang Wang and Wei Xu and Alan L Yuille},
       booktitle={CVPR},
       year={2016}
     }
 
-    @inproceedings{chen2016semantic,
+    @inproceedings{CB2016Semantic,
       title={Semantic Image Segmentation with Task-Specific Edge Detection Using CNNs and a Discriminatively Trained Domain Transform},
       author={Liang-Chieh Chen and Jonathan T Barron and George Papandreou and Kevin Murphy and Alan L Yuille},
       booktitle={CVPR},
       year={2016}
     }
 
-    @inproceedings{papandreou2015weak,
+    @inproceedings{PC2015Weak,
       title={Weakly- and Semi-Supervised Learning of a DCNN for Semantic Image Segmentation},
       author={George Papandreou and Liang-Chieh Chen and Kevin Murphy and Alan L Yuille},
       booktitle={ICCV},
       year={2015}
     }
 
-    @inproceedings{chen2015semantic,
+    @inproceedings{CP2015Semantic,
       title={Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs},
       author={Liang-Chieh Chen and George Papandreou and Iasonas Kokkinos and Kevin Murphy and Alan L Yuille},
       booktitle={ICLR},
@@ -60,7 +60,7 @@ Note that if you use the densecrf implementation, please consult and cite the fo
 
 *DeepLabv2* currently achieves **79.7%** on the challenging PASCAL VOC 2012 semantic image segmentation task -- see the [leaderboard](http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=6). 
 
-Please refer to our poject [website](http://liangchiehchen.com/projects/DeepLab.html) for details.
+Please refer to our project [website](http://liangchiehchen.com/projects/DeepLab.html) for details.
 
 ### Pre-trained models
 
@@ -102,4 +102,4 @@ Suppose the codes are located at deeplab/code
 
 ### Python
 
-Seyed Ali Mousavi has implemented a python version of run_pascal.sh (Thanks, Ali!). If you are more familiar with Python, you may want to take a look at [this](https://github.com/TheLegendAli/CCVL). 
+Seyed Ali Mousavi has implemented a python version of run_pascal.sh (Thanks, Ali!). If you are more familiar with Python, you may want to take a look at [this](https://github.com/TheLegendAli/CCVL).
