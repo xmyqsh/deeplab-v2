@@ -7,7 +7,7 @@ DeepLab is a state-of-art deep learning system for semantic image segmentation b
 It combines (1) *atrous convolution* to explicitly control the resolution at which feature responses are computed within Deep Convolutional Neural Networks, (2) *atrous spatial pyramid pooling* to robustly segment objects at multiple scales with filters at multiple sampling rates and effective fields-of-views, and (3) densely connected conditional random fields (CRF) as post processing.
 
 This distribution provides a publicly available implementation for the key model ingredients reported in our latest [arXiv paper](http://arxiv.org/abs/1606.00915).
-It also contains implementations for **all** methods reported in all our previous papers.
+This version also supports the experiments (DeepLab v1) in our ICLR'15. You only need to modify the old prototxt files. For example, our proposed atrous convolution is called dilated convolution in CAFFE framework, and you need to change the convolution parameter "hole" to "dilation" (the usage is exactly the same). For the experiments in ICCV'15, there are some differences between our argmax and softmax_loss layers and Caffe's. Please refer to [DeepLabv1](https://bitbucket.org/deeplab/deeplab-public/) for details.
 
 Please consult and consider citing the following papers:
 
