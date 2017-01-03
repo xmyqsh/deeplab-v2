@@ -209,6 +209,7 @@ What distinguishes the method from SGD is the weight setting $$ W $$ on which we
 The **RMSprop** (`type: "RMSProp"`), suggested by Tieleman in a Coursera course lecture, is a gradient-based optimization method (like SGD). The update formulas are
 
 $$
+<<<<<<< HEAD
 (v_t)_i =
 \begin{cases}
 (v_{t-1})_i + \delta, &(\nabla L(W_t))_i(\nabla L(W_{t-1}))_i > 0\\
@@ -221,6 +222,13 @@ $$
 $$
 
 If the gradient updates results in oscillations the gradient is reduced by times $$1-\delta$$. Otherwise it will be increased by $$\delta$$. The default value of $$\delta$$ (`rms_decay`) is set to $$\delta = 0.02$$.
+=======
+\operatorname{MS}((W_t)_i)= \delta\operatorname{MS}((W_{t-1})_i)+ (1-\delta)(\nabla L(W_t))_i^2 \\
+(W_{t+1})_i= (W_{t})_i -\alpha\frac{(\nabla L(W_t))_i}{\sqrt{\operatorname{MS}((W_t)_i)}}
+$$
+
+The default value of $$\delta$$ (`rms_decay`) is set to $$\delta=0.99$$.
+>>>>>>> caffe/master
 
 [1] T. Tieleman, and G. Hinton.
     [RMSProp: Divide the gradient by a running average of its recent magnitude](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf).

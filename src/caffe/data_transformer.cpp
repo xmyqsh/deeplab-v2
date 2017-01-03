@@ -42,7 +42,7 @@ DataTransformer<Dtype>::DataTransformer(const TransformationParameter& param,
     for (int i = 0; i < param_.scale_factors_size(); ++i) {
       scale_factors_.push_back(param_.scale_factors(i));
     }
-  }  
+  }
 }
 
 template<typename Dtype>

@@ -6,6 +6,7 @@
 #include "caffe/util/math_functions.hpp"
 
 namespace caffe {
+
 template <typename Dtype>
 __global__ void SoftmaxLossForwardGPU(const int nthreads,
           const Dtype* prob_data, const Dtype* label, Dtype* loss,

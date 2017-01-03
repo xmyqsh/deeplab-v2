@@ -164,7 +164,7 @@ void ImageDimPrefetchingDataLayer<Dtype>::LayerSetUp(
 template <typename Dtype>
 void ImageDimPrefetchingDataLayer<Dtype>::Forward_cpu(
     const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dtype>*>& top) {
-  Batch<Dtype>* batch = 
+  Batch<Dtype>* batch =
     this->prefetch_full_.pop("Data layer prefetch queue empty");
   // Reshape to loaded data.
   top[0]->ReshapeLike(batch->data_);
