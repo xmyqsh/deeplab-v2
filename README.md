@@ -7,6 +7,8 @@ architecture` and `cudnn-v5`.
 
 Welcome test and debug :)
 
+--------------------------------------------
+
 ### Introduction
 
 DeepLab is a state-of-art deep learning system for semantic image segmentation built on top of [Caffe](http://caffe.berkeleyvision.org).
