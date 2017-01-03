@@ -2,8 +2,8 @@
 
 Level up from
 [DeepLabv2](https://bitbucket.org/aquariusjay/deeplab-public-ver2) using
-the laster caffe/master. All of the layers are newest. Support Pascal
-architecture and cudnn-v5.
+the lastest caffe/master. All of the layers are newest. Support `Pascal
+architecture` and `cudnn-v5`.
 
 Welcome test and debug :)
 
