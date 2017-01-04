@@ -747,15 +747,6 @@ int DataTransformer<Dtype>::Rand(int n) {
   return ((*rng)() % n);
 }
 
-template <typename Dtype>
-float DataTransformer<Dtype>::Uniform(const float min, const float max) {
-  CHECK(rng_);
-  Dtype d[1];
-  caffe_rng_uniform<Dtype>(1, Dtype(min), Dtype(max), d);
-  return (float)d[0];
-}
-
-
 INSTANTIATE_CLASS(DataTransformer);
 
 }  // namespace caffe

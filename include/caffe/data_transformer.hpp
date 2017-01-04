@@ -142,7 +142,6 @@ class DataTransformer {
    *    A uniformly random integer value from ({0, 1, ..., n-1}).
    */
   virtual int Rand(int n);
-  virtual float Uniform(const float min, const float max);
 
   void Transform(const Datum& datum, Dtype* transformed_data);
   // Tranformation parameters
