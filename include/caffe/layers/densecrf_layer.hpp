@@ -21,7 +21,7 @@ class DenseCRFLayer : public Layer<Dtype> {
  public:
   explicit DenseCRFLayer(const LayerParameter& param)
       : Layer<Dtype>(param) {
-        // Init pointers with NULL for avoid deallocate a non-NULL pointer.
+        // Init pointers with NULL to avoid `deallocate` a non-NULL pointer.
         // TODO: try anthor more safe and elegent method to do this.
         unary_ = NULL;
         current_ = NULL;
