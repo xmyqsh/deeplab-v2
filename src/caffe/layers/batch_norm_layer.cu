@@ -46,7 +46,7 @@ void BatchNormLayer<Dtype>::Forward_gpu(const vector<Blob<Dtype>*>& bottom,
       spatial_dim, 1, -1, num_by_chans_.gpu_data(),
       spatial_sum_multiplier_.gpu_data(), 1., top_data);
 
-  if (use_global_stats_ && this->phase_ == TRAIN && update_global_stats_) {
+  if (!use_global_stats_) {
     // compute variance using var(X) = E((X-EX)^2)
     caffe_gpu_powx(top[0]->count(), top_data, Dtype(2),
         temp_.mutable_gpu_data());  // (X-EX)^2
