@@ -28,6 +28,11 @@ find_package(HDF5 COMPONENTS HL REQUIRED)
 include_directories(SYSTEM ${HDF5_INCLUDE_DIRS} ${HDF5_HL_INCLUDE_DIR})
 list(APPEND Caffe_LINKER_LIBS ${HDF5_LIBRARIES} ${HDF5_HL_LIBRARIES})
 
+# ---[ MATIO
+find_package(MATIO REQUIRED)
+include_directories(SYSTEM ${MATIO_INCLUDE_DIR})
+list(APPEND Caffe_LINKER_LIBS ${MATIO_LIBRARIES})
+
 # ---[ LMDB
 if(USE_LMDB)
   find_package(LMDB REQUIRED)
